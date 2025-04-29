@@ -31,7 +31,7 @@ namespace Sql
             }
         }
 
-        // Method to insert new user
+        
         public static void InsertUser(string username, string password, string role)
         {
             using (SqlConnection con = GetConnection())
@@ -46,7 +46,7 @@ namespace Sql
             }
         }
 
-        // Method to validate user login
+        
         public static bool ValidateUserLogin(string username, string password)
         {
             using (SqlConnection con = GetConnection())
@@ -60,7 +60,7 @@ namespace Sql
             }
         }
 
-        // Method to get the role of a user
+        
         public static string GetUserRole(string username)
         {
             using (SqlConnection con = GetConnection())
@@ -73,7 +73,7 @@ namespace Sql
             }
         }
 
-        // Method to load employees into a DataTable
+        
         public static DataTable LoadEmployees()
         {
             using (SqlConnection con = GetConnection())
@@ -86,7 +86,7 @@ namespace Sql
             }
         }
 
-        // Method to insert new employee
+        
         public static void InsertEmployee(string name, string position, float salary)
         {
             using (SqlConnection con = GetConnection())
@@ -101,7 +101,7 @@ namespace Sql
             }
         }
 
-        // Method to update an employee's information
+        
         public static void UpdateEmployee(int id, string name, string position, float salary)
         {
             using (SqlConnection con = GetConnection())
@@ -117,7 +117,7 @@ namespace Sql
             }
         }
 
-        // Method to delete an employee
+       
         public static void DeleteEmployee(int id)
         {
             using (SqlConnection con = GetConnection())
